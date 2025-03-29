@@ -1,4 +1,4 @@
-# FineCausal: A Causal-Based Framework for \\Interpretable Fine-Grained Action Quality Assessment
+# FineCausal: A Causal-Based Framework for Interpretable Fine-Grained Action Quality Assessment
 
 This repository contains the PyTorch implementation for FineCausal.
 
