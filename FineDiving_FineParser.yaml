@@ -1,0 +1,45 @@
+# basic
+bs_train : 2
+bs_test : 1
+workers : 8
+update_iter : 2
+max_epoch : 300
+warmup_epochs : 5
+
+# model
+pretrained_i3d_weight : 'models/model_rgb.pth'
+
+data_root : '/nobackup/projects/bddur43/Datasets/FINADiving_MTL_256s'
+label_path : '/nobackup/projects/bddur43/Datasets/Annotations/fine-grained_annotation_aqa.pkl'
+train_split : '/nobackup/projects/bddur43/Datasets/Annotations/train_split.pkl'
+test_split : '/nobackup/projects/bddur43/Datasets/Annotations/test_split.pkl'
+data_mask_root: '/nobackup/projects/bddur43/Datasets/diving_mask_annotation_gray'
+
+
+
+# optimizer
+optimizer: 'Adam'
+weight_decay : 0
+base_lr : 0.001
+lr_factor : 0.1
+
+# others
+seed : 10086
+frame_length : 96
+voter_number : 10
+print_freq : 40
+log_freq : 10
+fix_size : 5
+step_num : 3
+prob_tas_threshold : 1.0
+random_choosing : False
+action_number_choosing: True
+DD_choosing: True
+# cuda_device : 4
+cuda_device : 1
+resume: True
+freeze_base: True
+temporal_shift_min : -3
+temporal_shift_max : 0
+wandb: False
+test: True
